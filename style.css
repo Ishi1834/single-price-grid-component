@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  /* ### Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* ### Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: var(--Light-Gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 15vw 6vw 5vw 6vw;
+  max-width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px, rgba(0, 0, 0, 0.1) 0px 5px 60px;
+}
+main > div {
+  /* > means first children elements only*/
+  background-color: white;
+  padding: 5vw;
+}
+.join {
+  background-color: white;
+}
+.join h3 {
+  color: var(--Cyan);
+  font-weight: 700;
+  padding: 10px 0;
+}
+.join div {
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+  padding: 10px 0;
+}
+.join p {
+  color: var(--Grayish-Blue);
+  padding: 10px 0;
+}
+.subscription {
+  background-color: var(--Cyan);
+}
+.subscription h3 {
+  color: white;
+  padding: 10px 0;
+}
+.subscription div {
+  color: var(--Light-Gray);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.subscription div span {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  padding-right: 10px;
+}
+.subscription p {
+  color: white;
+  padding: 10px 0 20px 0;
+}
+.subscription button {
+  width: 100%;
+  background-color: var(--Bright-Yellow);
+  color: white;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
+}
+.whyUs {
+  background-color: hsl(179, 62%, 53%);
+}
+.whyUs h3 {
+  color: white;
+  font-weight: 700;
+  padding: 10px 0;
+}
+ul {
+  list-style: none;
+  padding: 15px 0;
+}
+.whyUs ul li {
+  color: var(--Light-Gray);
+  padding: 2px 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    margin: 12vw 5vw 5vw 5vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px,
+      rgba(0, 0, 0, 0.1) 0px 5px 60px;
+  }
+  main > div {
+    padding: 2vw 3vw;
+  }
+  .join {
+    grid-column: 1/3;
+  }
+}
